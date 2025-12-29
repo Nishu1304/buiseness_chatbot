@@ -1,0 +1,36 @@
+# Core
+Django>=4.2,<5.0
+python-dotenv>=1.0.0
+
+# REST & Serialization
+djangorestframework>=3.14.0
+
+# MySQL
+mysqlclient>=2.2.0
+
+# Async / Background jobs
+celery>=5.3.0
+redis>=5.0.0
+
+# HTTP & Webhooks
+requests>=2.31.0
+
+# WhatsApp / Meta Webhooks (JSON handling)
+pydantic>=2.5.0
+
+# LLM / AI
+groq>=0.9.0
+
+# RAG / Embeddings
+faiss-cpu>=1.7.4
+sentence-transformers==2.6.1
+torch
+
+
+# Utilities
+python-dateutil>=2.8.2
+pytz>=2024.1
+tenacity>=8.2.3
+
+# Logging & Monitoring
+structlog>=24.1.0

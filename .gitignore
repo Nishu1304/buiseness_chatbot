@@ -1,0 +1,92 @@
+# =========================
+# Python
+# =========================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+
+# =========================
+# Virtual Environments
+# =========================
+venv/
+.env/
+.env.*
+.venv/
+ENV/
+
+# =========================
+# Django
+# =========================
+*.log
+
+
+# Django migrations cache
+**/migrations/__pycache__/
+
+# =========================
+# Database
+# =========================
+
+*.sql
+*.dump
+
+# =========================
+# Redis / Celery
+# =========================
+celerybeat-schedule
+celerybeat.pid
+
+# =========================
+# FAISS / RAG Indexes
+# =========================
+#apps/rag/stores/
+#*.faiss
+#*.index
+
+# =========================
+# Environment & Secrets
+# =========================
+.env
+.env.local
+.env.production
+*.key
+*.pem
+*.crt
+
+# =========================
+# Logs
+# =========================
+logs/
+#*.log
+
+# =========================
+# OS / Editor
+# =========================
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# =========================
+# Build / Deploy
+# =========================
+*.pid
+*.out
+gunicorn.sock
+
+# =========================
+# Tests / Coverage
+# =========================
+.coverage
+htmlcov/
+.pytest_cache/
+
+# =========================
+# Temporary Files
+# =========================
+tmp/
+temp/
