@@ -1,7 +1,7 @@
 # Core
 Django>=4.2,<5.0
 python-dotenv>=1.0.0
-
+gunicorn
 # REST & Serialization
 djangorestframework>=3.14.0
 
