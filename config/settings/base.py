@@ -41,7 +41,7 @@ INSTALLED_APPS = [
     "apps.features.leads",
     "apps.features.appointments",
     "apps.features.orders",
-    "apps.features.payments",
+    #"apps.features.payments",
     "apps.features.feedback",
 
     # AI
@@ -90,9 +90,9 @@ ASGI_APPLICATION = "config.asgi.application"
 # Database (MySQL)
 # --------------------------------------------------
 DATABASES = {
-    "default": {
-        "ENGINE": "django.db.backends.mysql",
-        "NAME": "cb_bos_chatbot",
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
 
@@ -151,10 +151,9 @@ REST_FRAMEWORK = {
 # --------------------------------------------------
 # WhatsApp (Meta)
 # --------------------------------------------------
-WHATSAPP_VERIFY_TOKEN = os.getenv("WHATSAPP_VERIFY_TOKEN")
-WHATSAPP_ACCESS_TOKEN = os.getenv("WHATSAPP_ACCESS_TOKEN")
-WHATSAPP_PHONE_NUMBER_ID = os.getenv("WHATSAPP_PHONE_NUMBER_ID")
-
+WHATSAPP_VERIFY_TOKEN="navonous_verify_token"
+WHATSAPP_ACCESS_TOKEN="EAAa5YLqZCC1cBP8Rt8cf6ZC1xvBqa9izGO1nhGmdUUTuwab3apoUrNJozKWs6lHWTAvN95xiaeMn4vCEZByVDWOEFGtJOZCLElnOQEEgN5hc6uSxohP5gSfxL7QJ6BHC5GmssZCyq0L7bCxZCmIyvPvg7dtQkygmnCV5CtO0FYohVGz7lZAmTMIs8asRVdijBQfCG8ZBPMFkx6Pn"
+WHATSAPP_PHONE_NUMBER_ID="770274896170001"
 # --------------------------------------------------
 # AI / Groq
 # --------------------------------------------------
@@ -175,6 +174,9 @@ LOGGING = {
     },
 }
 
+BOS_BASE_URL = "https://buiseness-backend.onrender.com"
+BOS_EMAIL = "admin@gmail.com"
+BOS_PASSWORD = "1234"
 # --------------------------------------------------
 # Defaults
 # --------------------------------------------------
